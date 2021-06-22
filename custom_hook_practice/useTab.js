@@ -1,4 +1,4 @@
-const data = [
+const DATA = [
   {
     title: "Section 1",
     content: "내용111",
@@ -18,7 +18,7 @@ const useTab = (index, data) => {
 };
 
 export default function App() {
-  const { currentTab, changeItem } = useTab(0, data);
+  const { currentTab, changeItem } = useTab(0, DATA);
   return (
     <div className="App">
       {data.map((elem, index) => (
